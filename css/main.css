@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+/*----- HEADER ------*/
+.header-social { 
+    background-color: #5684AE;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+}
+.header-social img {
+    width: 30px;
+    height: auto;
+}
+.header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color:white;  
+}
+.header img {
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 140px;
+    height: auto;
+}
+.header-lista {
+    margin-top: 34px;
+    margin-right: 100px;
+    float: right;
+}
+.header-lista a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #424874;
+    font-weight: bolder;    
+    padding:33px;
+}
+.header-lista a:hover {
+    color: #5684AE;
+    text-shadow: none;
+}
+
+/*----- MAIN ------*/
+.main-container{
+    background-color: #5684AE;
+}
+.main-container-prod{
+    background-color: #96bbde;
+    display: flex;
+    justify-content: center;
+}
+.main-container-acc{
+    height:fit-content;
+    background-color: #5684AE;
+}
+
+.form-container{
+    background-color: #5684AE;
+    height: 500px;
+    padding: 50px;
+}
+.main-centeredText {
+    text-align: center;
+    padding: 20px;
+    background-color:#5684AE;
+}
+.main-centeredTextProd{
+    text-align: center;
+    padding: 20px;
+    background-color: #96bbde;
+}
+/*----- CONTACTO ------*/
+.form-holder{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    width: 1000px;
+}
+.msg-holder{
+    height: 200px;
+}
+.form-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-button{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: solid 1px black;
+}
+
+/*----- CARRUSEL ------*/
+
+.main-carousel {
+    background-color: white;
+    margin: auto;
+    max-width: fit-content;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+/*----- DESTACADOS ------*/
+.main-destacados{
+    display: flex;
+    justify-content: center;
+}
+.card-index{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bg-card{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 300px;
+    border: 1px solid black;
+}
+.ancho-img{
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid black;
+}
+.border-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.boton-dest{
+    background-color: #424874;
+    padding: 10px; 
+    margin: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+.boton-dest:hover{
+    background-color: #5684AE;
+}
+.boton-dest a{
+    color:white;
+    text-decoration: none;
+}
+/*----- PRODUCTOS ------*/
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:#5684AE;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    border-right: solid 1px black
+}
+.sidebar a {
+    display: block;
+    color:white;
+    padding: 16px;
+    text-decoration: none;
+    border-top: solid 1px black;
+}
+.sb-last{
+    border-bottom: solid 1px black;
+}
+
+.sidebar a:hover{
+    background-color:#424874;
+    color: white;
+}
+.main-productos{
+        background-color: #96bbde;
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 720px;
+}
+/*----- ACCOUNT ------*/
+.acc-input{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    width: 600px;
+}
+.b-acc{
+    border: solid 1px black;
+}
+.acc-img{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: auto;
+}
+/*----- EMPRESA ------*/
+.emp-img{
+    width: 500px;
+    height: auto;
+    border: solid 1px black;
+}
+.emp-logo-text{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 50px;
+    border: solid 1px black;
+}
+.emp-logo-text p{
+    padding: 50px;
+    background-color: #96bbde;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+.emp-map{
+    width:500px;
+    height:auto;
+}
+#map1{
+    border-left: solid 1px black;
+}
+
+/*----- FOOTER ------*/
+.borde-footer{
+    border-top: 2px solid black;
+}
+.info-footer{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.div-footer{
+    margin: 10px;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+.div-footer a{
+    text-decoration: none;
+}
