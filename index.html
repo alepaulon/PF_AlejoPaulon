@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Palmieri Distribuciones</title>
         <link rel="stylesheet" href="./css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7b7af7bb0c.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <!-- Inicio menú social-->
-        <div class="header-social">
-            <ul>
-                <a href="https://www.facebook.com/"><img src="./assets/img/facebook.svg" alt="facebook"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/img/instagram.svg" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/"><img src="./assets/img/whatsapp.svg" alt="whatsapp"></a>
-            </ul>
-        </div>
-        <!-- Fin menú social-->
-        <!-- Cabecera-->
         <header>
-        <!-- Logo y menu-->
-            <nav class="header">
-                <a href="./index.html"><img src="./assets/img/LOGO.jpeg" alt="Logo"></a>
-                <ul class="header-lista">
-                    <a href="./index.html">INICIO</a>
-                    <a href="./pages/productos.html">PRODUCTOS</a>
-                    <a href="./pages/empresa.html">LA EMPRESA</a>
-                    <a href="./pages/contacto.html">CONTACTO</a>
-                    <a href="./pages/cuenta.html">MI CUENTA</a>
-                </ul>
-            </nav>
-        <!-- Fin menu-->
+            <div class="header">
+                <div class="h-redes">
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/img/LOGO.jpeg" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Accesorios para agua</a></li>
+                              <li><a class="dropdown-item" href="#">Accesorios para gas</a></li>
+                              <li><a class="dropdown-item" href="#">Grifería</a></li>
+                              <li><a class="dropdown-item" href="#">Caños</a></li>
+                              <li><a class="dropdown-item" href="#">Sanitarios</a></li>
+                              <li><a class="dropdown-item" href="#">Repuestos</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/empresa.html">La Empresa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/cuenta.html">Mi Cuenta</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" aria-label="Search">
+                          <button class="btn btn-light" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
-        <!-- Fin cabecera-->
-        <main class="main-container">
-        <!-- Carrusel promos-->
-            <h1 class="main-centeredText">PROMOCIONES</h1>
-            <div class="main-carousel">
-                <img src="./assets/img/PROMO.jpeg" alt="promo ferrum">
+        <main class="main">
+            <h1 class="m-text__centered">PROMOCIONES</h1>
+            <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/PALMIERI.jpeg" class="d-block w-100" alt="Palmieri">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/PROMO.jpeg" class="d-block w-100" alt="Promo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            <h1 class="m-text__centered">PRODUCTOS DESTACADOS</h1>
+            <div class="main-destacados">
+              <div class="card-index">
+                  <div class="border-card">
+                      <img class="ancho-img" src="./assets/img/productos/A_LavatorioPedestal_Bari_1ag.jpg" alt="lavatorio">
+                  </div>
+                  <div class="bg-card">
+                      <h3>Lavatorio Bari</h3>
+                      <button class="boton-dest">
+                          <a href="">Ver más</a>
+                      </button>
+                  </div>
+              </div>
+              <div class="card-index">
+                  <div class="border-card">
+                      <img class="ancho-img" src="./assets/img/productos/BIDET_BARI_(1_AGUJERO).jpg" alt="bidet">
+                  </div>
+                  <div class="bg-card">
+                      <h3>Bidet Bari</h3>
+                      <button class="boton-dest">
+                          <a href="">Ver más</a>
+                      </button>
+                  </div>
+              </div>
+              <div class="card-index">
+                  <div class="border-card">
+                      <img class="ancho-img" src="./assets/img/productos/inodoro-de-pie-largo-andina-ferrum-sanitarios-blanco-and-in-002-bl-b_2.jpg" alt="inodoro">
+                  </div>
+                  <div class="bg-card">
+                      <h3>Inodoro Ferrum</h3>
+                      <button class="boton-dest">
+                          <a href="">Ver más</a>
+                      </button>
+                  </div>
+              </div>
             </div>
-        <!-- Fin carrusel promos-->
-        <!-- Destacados-->
-            <div><h1 class="main-centeredText">PRODUCTOS DESTACADOS</h1></div>
-        <article class="main-destacados">
-            <div class="card-index">
-                <div class="border-card">
-                    <img class="ancho-img" src="./assets/img/productos/A_LavatorioPedestal_Bari_1ag.jpg" alt="lavatorio">
-                </div>
-                <div class="bg-card">
-                    <h3>Lavatorio Bari</h3>
-                    <button class="boton-dest">
-                        <a href="">COMPRAR</a>
-                    </button>
-                </div>
-            </div>
-            <div class="card-index">
-                <div class="border-card">
-                    <img class="ancho-img" src="./assets/img/productos/BIDET_BARI_(1_AGUJERO).jpg" alt="bidet">
-                </div>
-                <div class="bg-card">
-                    <h3>Bidet Bari</h3>
-                    <button class="boton-dest">
-                        <a href="">COMPRAR</a>
-                    </button>
-                </div>
-            </div>
-            <div class="card-index">
-                <div class="border-card">
-                    <img class="ancho-img" src="./assets/img/productos/inodoro-de-pie-largo-andina-ferrum-sanitarios-blanco-and-in-002-bl-b_2.jpg" alt="inodoro">
-                </div>
-                <div class="bg-card">
-                    <h3>Inodoro Ferrum</h3>
-                    <button class="boton-dest">
-                        <a href="">COMPRAR</a>
-                    </button>
-                </div>
-            </div>
-        </article>
-            
-        <!-- Fin destacados-->
         </main>
-        <!-- Footer -->
         <footer class="borde-footer">
             <ul class="info-footer">
                 <div class="div-footer">
@@ -99,12 +136,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam, aliquid dolorum magni totam optio explicabo atque, vero tempora amet ullam distinctio exercitationem debitis incidunt excepturi enim dicta non iste.</p>
                 </div>
                 <div class="div-footer">
-                    <h2><a href="./pages/contacto.html">Contactanos</a></h2>
+                    <h2>FAQ</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum tempore aperiam, eligendi expedita alias optio exercitationem consequatur ducimus fuga nisi deserunt obcaecati nulla suscipit vitae dicta atque ipsa culpa!</p>
                 </div>
             </ul>
         </footer>
-        <!-- Footer -->
     </body>
 </html>
