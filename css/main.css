@@ -136,7 +136,7 @@
     padding: 10px;
     margin: 20px;
     display: flex;
-    width: 1000px;
+    width: 300px;
 }
 .msg-holder{
     height: 200px;
@@ -190,17 +190,17 @@
     padding: 10px;
     margin: 20px;
     display: flex;
-    width: 600px;
+    width: 300px;
 }
 .b-acc{
     border: solid 1px black;
 }
 .acc-img{
-    display: flex;
-    justify-content: center;
     height: 100px;
-    width: auto;
+    width: 100px;
+    margin: auto;
 }
+
 /*----- EMPRESA ------*/
 .emp-img{
     width: 500px;
@@ -245,11 +245,6 @@
 }
 
 /*-------MEDIA------*/
-@media (min-width: 1024px) {
-    .main-destacados{
-        flex-direction: row;
-    }
-}
 
 @media (min-width: 768px) {
     .main-destacados{
@@ -258,6 +253,21 @@
     }
     .info-footer{
         flex-direction: row;
+    }
+    .acc-input{
+        width: 600px;
+    }
+    .form-holder{
+        width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-destacados{
+        flex-direction: row;
+    }
+    .form-holder{
+        width: 1000px;
     }
 }
   
