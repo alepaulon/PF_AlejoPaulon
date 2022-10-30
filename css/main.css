@@ -74,43 +74,6 @@
     margin: 20px 0 20px 0;
     font-weight:600;
 }
-.main-destacados{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.card-index{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.bg-card{
-    background-color: white;
-    padding: 10px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 300px;
-    border: 1px solid black;
-}
-.ancho-img{
-    width: 300px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 1px solid black;
-}
-.border-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
 .boton-dest{
     background-color: #424874;
     padding: 10px; 
@@ -124,10 +87,6 @@
 .boton-dest a{
     color:white;
     text-decoration: none;
-}
-.card-index:hover{ 
-    animation: pulse 1s infinite;
-    animation-timing-function: linear;   
 }
 
 /*----- CONTACTO ------*/
@@ -153,37 +112,36 @@
     border-radius: solid 1px black;
 }
 /*----- PRODUCTOS ------*/
-.sidebar{
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color:#5684AE;
-    position: absolute;
-    height: 100%;
-    overflow: auto;
-    border-right: solid 1px black
-}
-.sidebar a {
-    display: block;
-    color:white;
-    padding: 16px;
-    text-decoration: none;
-    border-top: solid 1px black;
-}
-.sb-last{
-    border-bottom: solid 1px black;
+.main-productos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
 }
 
-.sidebar a:hover{
-    background-color:#424874;
-    color: white;
+.main-productos img{
+    width: 280px;
 }
-.main-productos{
-        background-color: #96bbde;
-        margin-left: 200px;
-        padding: 1px 16px;
-        height: 720px;
+
+.main-productos__item{
+    text-align: center;
+    background-color: #95b9db;
+    padding: 5px;
+    margin: 10px;
+    border: 1px black solid;
+    transition: transform .2s ease;
 }
+
+.main-productos__item:hover{
+    transform: scale(1.05);
+}
+
+.main-productos__item p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 /*----- ACCOUNT ------*/
 .acc-input{
     border: 1px solid black;
@@ -202,33 +160,39 @@
 }
 
 /*----- EMPRESA ------*/
-.emp-img{
-    width: 500px;
-    height: auto;
-    border: solid 1px black;
-}
-.emp-logo-text{
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-    padding: 50px;
-    border: solid 1px black;
-}
-.emp-logo-text p{
-    padding: 50px;
-    background-color: #96bbde;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-    border-right: solid 1px black;
-}
-.emp-map{
-    width:500px;
-    height:auto;
-}
-#map1{
-    border-left: solid 1px black;
+.grid-empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "grid-img"
+        "grid-text"
+        "grid-map";
 }
 
+.grid-img {
+    grid-area: grid-img;
+    border: 1px black solid;
+}
+
+.grid-img img{
+    width: 300px;
+}
+
+.grid-text {
+    grid-area: grid-text;
+    width: 300px;
+}
+
+.grid-map {
+    grid-area: grid-map;
+}
 /*----- FOOTER ------*/
 .borde-footer{
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5) inset;
@@ -236,13 +200,19 @@
 .info-footer{
     display: flex;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     flex-direction: column;
 }
 .div-footer{
     padding: 10px;
+    max-width: 440px;
 }
+.div-footer a{
+    text-decoration: none;
+    color: black;
+}
+
 
 /*-------MEDIA------*/
 
@@ -260,6 +230,23 @@
     .form-holder{
         width: 600px;
     }
+    .grid-empresa {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 20px 0;
+        grid-template-areas:
+            "grid-img grid-text"
+            "grid-map grid-text";
+    }
+    .grid-text {
+        grid-area: grid-text;
+        width: 350px;
+    }
+    .main-productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -269,11 +256,9 @@
     .form-holder{
         width: 1000px;
     }
-}
-  
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1);
-    100% { transform: scale(1); }
+    .grid-text {
+        grid-area: grid-text;
+        width: 600px;
     }
 }
+  
