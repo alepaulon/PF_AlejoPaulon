@@ -1,0 +1,29 @@
+.main-productos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+
+    img{
+        width: 280px;
+    }
+}
+
+.main-productos__item{
+    text-align: center;
+    background-color: $lightblue_bg;
+    padding: 5px;
+    margin: 10px;
+    border: 1px black solid;
+    transition: transform .2s ease;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    p{
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}

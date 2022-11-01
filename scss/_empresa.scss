@@ -1,0 +1,33 @@
+.grid-empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "grid-img"
+        "grid-text"
+        "grid-map";
+}
+
+.grid-img {
+    grid-area: grid-img;
+    border: 1px black solid;
+
+
+    img{
+        width: 300px;
+    }
+}
+.grid-text {
+    grid-area: grid-text;
+    width: 300px;
+}
+
+.grid-map {
+    grid-area: grid-map;
+}

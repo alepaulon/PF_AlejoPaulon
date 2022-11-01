@@ -1,0 +1,46 @@
+.navbar-brand {
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        padding: 10px;
+    }
+}
+
+.nav-item {
+    a {
+        font-weight: 600;
+    }
+}
+
+.h-redes {
+    background-color: $blue_bg;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 5px;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5) inset;
+
+    a {
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: $lightblue_bg;
+    }
+}
+
+$redes: (
+    wpp: #1dea20,
+    fb: #3a5795,
+    insta: #ec16b0
+);
+
+@each $red,
+$color in $redes {
+    .red-#{$red}:hover {
+        color: $color;
+    }
+}

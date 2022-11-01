@@ -1,0 +1,49 @@
+@mixin row-wrap-center{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .main-destacados{
+        @include row-wrap-center;
+    }
+    .info-footer{
+        flex-direction: row;
+    }
+    .acc-input{
+        width: 600px;
+    }
+    .form-holder{
+        width: 600px;
+    }
+    .grid-empresa {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 20px 0;
+        grid-template-areas:
+            "grid-img grid-text"
+            "grid-map grid-text";
+    }
+    .grid-text {
+        grid-area: grid-text;
+        width: 350px;
+    }
+    .main-productos{
+        @include row-wrap-center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-destacados{
+        flex-direction: row;
+    }
+    .form-holder{
+        width: 1000px;
+    }
+    .grid-text {
+        grid-area: grid-text;
+        width: 600px;
+    }
+}
+  

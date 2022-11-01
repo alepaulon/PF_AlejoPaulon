@@ -1,0 +1,21 @@
+.form-holder{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+}
+.msg-holder{
+    height: 200px;
+}
+.form-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-button{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: solid 1px black;
+}
